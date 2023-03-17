@@ -1,6 +1,5 @@
-import { render, RenderResult, screen } from "@testing-library/react";
-import { CustomLink } from "../../../components/atoms/link/CustomLink";
-// import "@testing-library/jest-dom";
+import { render, RenderResult } from "@testing-library/react";
+import { CustomLink } from "../../../components/atoms/Link/CustomLink";
 
 describe("Custom Link", () => {
   let wrapper: RenderResult;

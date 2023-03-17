@@ -2,15 +2,15 @@ import React, { FC } from "react";
 import styles from "./Skill.module.scss";
 
 interface Props {
-  text: string;
+  name: string;
   percentage: number;
 }
 
-export const Skill: FC<Props> = ({ text, percentage }) => {
+export const Skill: FC<Props> = ({ name, percentage }) => {
   return (
     <div className={styles.skill_container}>
-      <span>{text}</span>
-      <progress id={"percentage" + text} value={percentage} max="100">
+      <span>{name}</span>
+      <progress id={"percentage" + name} value={percentage} max="100">
         {" "}
       </progress>
     </div>

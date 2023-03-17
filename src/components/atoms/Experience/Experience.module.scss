@@ -1,0 +1,22 @@
+$base-color: #373a3c;
+
+.experience {
+  &__title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    color: $base-color;
+    font-weight: 300;
+  }
+
+  &__duration {
+    color: rgb(55, 58, 60, 0.8);
+    font-size: 16px;
+  }
+
+  &__description {
+    color: $base-color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

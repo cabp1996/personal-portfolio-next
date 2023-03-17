@@ -1,7 +1,6 @@
-import { Header, Profile } from "@/components";
+import { Footer, Header, Main } from "@/components";
 import Head from "next/head";
 import React from "react";
-import styles from "../styles/MainPage.module.scss";
 
 export const MainPage = () => {
   return (
@@ -14,10 +13,8 @@ export const MainPage = () => {
       </Head>
 
       <Header />
-
-      <main className={styles.main}>
-        <Profile />
-      </main>
+      <Main />
+      <Footer />
     </div>
   );
 };
