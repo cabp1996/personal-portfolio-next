@@ -1,11 +1,11 @@
-import { Avatar } from "@/components";
+import { CustomImage } from "@/components";
 import React from "react";
 import styles from "./Profile.module.scss";
 
 export const Profile = () => {
   return (
     <div className={styles.profile_container}>
-      <Avatar src="/images/devsu.jpg" alt="avatar" height={200} width={200} />
+      <CustomImage src="/images/devsu.jpg" alt="avatar" height={200} width={200} />
       <div className={styles.profile_container__info}>
         <h1>Andrés Balcázar</h1>
         <h2>Desarrollador frontend</h2>

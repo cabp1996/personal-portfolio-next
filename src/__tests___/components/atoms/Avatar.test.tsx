@@ -1,4 +1,4 @@
-import { Avatar } from "../../../components/atoms/Avatar/Avatar";
+import { Avatar } from "../../../components/atoms/CustomImage/CustomImage";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("Avatar tests", () => {

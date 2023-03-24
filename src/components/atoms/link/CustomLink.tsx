@@ -5,6 +5,7 @@ import styles from "./CustomLink.module.scss";
 interface Props {
   text: string;
   path: string;
+  query?: { [key: string]: string };
   fontSize?: string;
   fontColor?: string;
   margin?: string;
@@ -13,13 +14,17 @@ interface Props {
 export const CustomLink: FC<Props> = ({
   text,
   path,
+  query,
   fontSize = "14px",
   fontColor = "blue",
   margin = "",
 }) => {
   return (
     <Link
-      href={path}
+      href={{
+        pathname: path,
+        query: query,
+      }}
       className={styles.link}
       style={{ fontSize, color: fontColor, margin }}
     >
