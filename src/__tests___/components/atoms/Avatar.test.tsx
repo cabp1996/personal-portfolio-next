@@ -1,4 +1,4 @@
-import { Avatar } from "../../../components/atoms/CustomImage/CustomImage";
+import { CustomImage } from "../../../components/atoms/CustomImage/CustomImage";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("Avatar tests", () => {
@@ -13,10 +13,10 @@ describe("Avatar tests", () => {
       height: 100,
     };
 
-    wrapper = render(<Avatar {...props} />);
+    wrapper = render(<CustomImage {...props} />);
   });
 
-  test("should render Avatar", async () => {
+  test("should render CustomImage", async () => {
     const avatar = await wrapper.findByRole('img');
     expect(avatar).toBeTruthy();
   });

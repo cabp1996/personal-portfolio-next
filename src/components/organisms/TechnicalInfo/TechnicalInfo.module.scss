@@ -10,8 +10,22 @@
     box-sizing: border-box;
     padding: 1rem;
 
-    h3 {
+    h2 {
       margin: 0;
+    }
+
+    &__skillslist {
+      padding: 0;
+
+      li {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

@@ -11,9 +11,15 @@ export const TechnicalInfo = () => {
       <div className={styles.section__container}>
         <h2>Skills</h2>
 
-        {skillsData.map((skill) => {
-          return <Skill key={skill.name} {...skill} />;
-        })}
+        <ul className={styles.section__container__skillslist}>
+          {skillsData.map((skill) => {
+            return (
+              <li key={skill.name}>
+                <Skill {...skill} />
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <div className={styles.section__container}>
         <h2>Experience</h2>

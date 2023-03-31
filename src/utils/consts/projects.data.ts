@@ -7,6 +7,7 @@ export const projectsData: Project[] = [
     image: "/images/project.jpg",
     name: "VisionFund",
     skills: ["Xamarin"],
+    duration: "6 meses",
   },
   {
     description:
@@ -14,6 +15,7 @@ export const projectsData: Project[] = [
     image: "/images/project.jpg",
     name: "Gestión de activos",
     skills: ["Flutter"],
+    duration: "6 meses",
   },
   {
     description:
@@ -21,6 +23,7 @@ export const projectsData: Project[] = [
     image: "/images/project.jpg",
     name: "Profile",
     skills: ["NextJS", "ReactJs", "Firebase", "Tailwind CSS"],
+    duration: "3 meses",
   },
   {
     description:
@@ -28,5 +31,6 @@ export const projectsData: Project[] = [
     image: "/images/project.jpg",
     name: "Vinculación de clientes",
     skills: ["Angular"],
+    duration: "6meses",
   },
 ];

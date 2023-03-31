@@ -1,0 +1,16 @@
+.main {
+  margin: 2.5rem;
+
+  padding: 2rem;
+  box-sizing: border-box;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    &__image {
+      position: relative;
+      height: 375px;
+    }
+  }
+}

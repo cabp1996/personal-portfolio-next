@@ -1,6 +1,8 @@
+import { ProjectMain } from "@/components";
 import { Project } from "@/interfaces";
 import { projectsData } from "@/utils/consts/projects.data";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import React, { FC } from "react";
 
 interface Props {
@@ -8,7 +10,17 @@ interface Props {
 }
 
 const IndividualProjectPage: FC<Props> = ({ project }) => {
-  return <div>{project.name}</div>;
+  return (
+    <>
+      <Head>
+        <title>{project.name}</title>
+        <meta name="description" content={project.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <ProjectMain project={project} />
+    </>
+  );
 };
 
 export default IndividualProjectPage;
