@@ -1,7 +1,7 @@
-import { Experience } from "@/components/atoms/Experience/Experience";
-import { Skill } from "@/components/atoms/Skill/Skill";
-import { experienceData } from "@/utils/consts/experience.data";
-import { skillsData } from "@/utils/consts/skill.data";
+import { Experience } from "../../atoms/Experience/Experience";
+import { Skill } from "../../atoms/Skill/Skill";
+import { experienceData } from "../../../utils/consts/experience.data";
+import { skillsData } from "../../../utils/consts/skill.data";
 import React from "react";
 import styles from "./TechnicalInfo.module.scss";
 

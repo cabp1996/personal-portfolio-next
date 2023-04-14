@@ -1,5 +1,5 @@
 import { RenderResult, render } from "@testing-library/react";
-import { Button } from "../../../components/atoms/Button/Button";
+import { Button } from "./Button";
 
 describe("Button", () => {
     let wrapper: RenderResult;

@@ -1,5 +1,5 @@
 import { render, RenderResult } from "@testing-library/react";
-import { CustomLink } from "../../../components/atoms/Link/CustomLink";
+import { CustomLink } from "./CustomLink";
 
 describe("Custom Link", () => {
   let wrapper: RenderResult;

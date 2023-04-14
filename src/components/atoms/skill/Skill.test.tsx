@@ -1,4 +1,4 @@
-import { Skill } from "../../../components/atoms/Skill/Skill";
+import { Skill } from "./Skill";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("Skill tests", () => {

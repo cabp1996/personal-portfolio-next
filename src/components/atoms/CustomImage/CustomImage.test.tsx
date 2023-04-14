@@ -1,7 +1,7 @@
-import { CustomImage } from "../../../components/atoms/CustomImage/CustomImage";
+import { CustomImage } from "./CustomImage";
 import { render, RenderResult } from "@testing-library/react";
 
-describe("Avatar tests", () => {
+describe("CustomImage tests", () => {
   let wrapper: RenderResult;
   let props: any;
 

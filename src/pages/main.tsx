@@ -1,4 +1,5 @@
 import { Footer, Header, Main } from "@/components";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
 
@@ -20,3 +21,9 @@ export const MainPage = () => {
 };
 
 export default MainPage;
+
+export const getStaticProps: GetStaticProps = async (_) => {
+  return {
+    props: {},
+  };
+};

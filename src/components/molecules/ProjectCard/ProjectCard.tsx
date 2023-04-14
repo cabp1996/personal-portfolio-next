@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { CustomLink, CustomImage } from "@/components";
+import { CustomImage } from "../../atoms/CustomImage/CustomImage";
+import { CustomLink } from "../../atoms/Link/CustomLink";
 import styles from "./ProjectCard.module.scss";
 
 interface Props {
