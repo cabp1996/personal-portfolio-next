@@ -1,0 +1,45 @@
+.projectinfo {
+  display: flex;
+  flex-direction: column;
+//   border-left: 0.5px solid #b5b8ba;
+  box-sizing: border-box;
+  padding-left: 3rem;
+
+  h1 {
+    color: #373a3c;
+    font-weight: bolder !important;
+    font-size: 50px !important;
+    margin: 0;
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-top: none;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  ol {
+    
+    margin: 0;
+
+    li {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

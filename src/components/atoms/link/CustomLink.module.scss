@@ -1,0 +1,9 @@
+.link {
+  color: blueviolet;
+  text-decoration: none !important;
+
+  &:hover {
+    opacity: 0.5;
+    text-decoration: underline !important;
+  }
+}

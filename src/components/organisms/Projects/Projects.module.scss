@@ -1,0 +1,21 @@
+.projects {
+  margin-top: 1rem;
+  background-color: #373a3c;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: 200 !important;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
