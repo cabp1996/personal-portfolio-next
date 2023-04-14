@@ -1,4 +1,4 @@
-import { render, RenderResult } from "@testing-library/react";
+import { cleanup, render, RenderResult } from "@testing-library/react";
 import { CustomLink } from "./CustomLink";
 
 describe("Custom Link", () => {
@@ -15,7 +15,20 @@ describe("Custom Link", () => {
     wrapper = render(<CustomLink {...props} />);
   });
 
+  afterEach(cleanup);
+
   test("should render a link", async () => {
+    const anchor = await wrapper.findByText(props.text);
+    expect(anchor).toBeTruthy();
+  });
+
+  test("should render a link with default props", async () => {
+    props = {
+      text: "link2",
+      path: "/",
+    };
+
+    wrapper = render(<CustomLink {...props} />);
     const anchor = await wrapper.findByText(props.text);
     expect(anchor).toBeTruthy();
   });
