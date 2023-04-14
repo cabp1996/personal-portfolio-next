@@ -27,20 +27,9 @@ export default IndividualProjectPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [
-      {
-        params: { name: "VisionFund" },
-      },
-      {
-        params: { name: "Gestión de activos" },
-      },
-      {
-        params: { name: "Profile" },
-      },
-      {
-        params: { name: "Vinculación de clientes" },
-      },
-    ],
+    paths: projectsData.map((project) => ({
+      params: { name: project.name },
+    })),
     fallback: "blocking",
   };
 };
