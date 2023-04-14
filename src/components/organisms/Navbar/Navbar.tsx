@@ -9,15 +9,8 @@ export const Navbar = () => {
         <h1>Portafolio</h1>
         <div>
           <CustomLink
-            text="Blog"
-            path="/"
-            fontColor="white"
-            fontSize="15px"
-            margin="0 1rem 0 0"
-          />
-          <CustomLink
             text="Github"
-            path="/"
+            path="https://github.com/cabp1996"
             fontColor="white"
             fontSize="15px"
           />

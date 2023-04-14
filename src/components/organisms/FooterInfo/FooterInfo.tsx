@@ -6,7 +6,6 @@ export const FooterInfo = () => {
     <section className={styles.footer}>
       <h3>© Andrés Balcázar</h3>
       <span>2023</span>
-      <p>Viva el sw libre</p>
     </section>
   );
 };

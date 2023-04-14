@@ -22,7 +22,7 @@ export const TechnicalInfo = () => {
         </ul>
       </div>
       <div className={styles.section__container}>
-        <h2>Experience</h2>
+        <h2>Experiencia</h2>
         <ul>
           {experienceData.map((experience) => {
             return (
