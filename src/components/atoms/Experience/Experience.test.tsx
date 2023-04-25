@@ -1,5 +1,5 @@
 import { Experience } from "./experience";
-import { render, RenderResult } from "@testing-library/react";
+import { render, RenderResult, screen } from "@testing-library/react";
 
 describe("Experience tests", () => {
   let wrapper: RenderResult;
@@ -15,8 +15,18 @@ describe("Experience tests", () => {
     wrapper = render(<Experience {...props} />);
   });
 
-  test("should render an Experience", async () => {
-    const experience = await wrapper.findByText(props.name);
-    expect(experience).toBeTruthy();
+  test("should render an experience title", async () => {
+    const title = await screen.findByText(props.name);
+    expect(title).toBeInTheDocument();
+  });
+
+  test("should render an experience duration", async () => {
+    const duration = await screen.findByText(props.duration);
+    expect(duration).toBeInTheDocument();
+  });
+
+  test("should render an experience description", async () => {
+    const description = await screen.findByText(props.description);
+    expect(description).toBeInTheDocument();
   });
 });

@@ -17,7 +17,7 @@ describe("Custom Link", () => {
 
   afterEach(cleanup);
 
-  test("should render a link", async () => {
+  test("should render a link with custom text", async () => {
     const anchor = await wrapper.findByText(props.text);
     expect(anchor).toBeTruthy();
   });
