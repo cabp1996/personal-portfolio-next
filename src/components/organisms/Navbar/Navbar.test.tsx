@@ -8,8 +8,14 @@ describe("Navbar test", () => {
     wrapper = render(<Navbar />);
   });
 
-  test("should portafolio title in heading", async () => {
-    const h1 = screen.findByText("Portafolio");
-    expect(h1).toBeTruthy();
+  test("should RENDER portafolio title in heading", async () => {
+    const h1 = await screen.findByText("Portafolio");
+    expect(h1).toBeInTheDocument();
+  });
+
+  test("should render a link with github path", async () => {
+    const link = await wrapper.findByText("Github");
+    expect(link).toBeInTheDocument();
+    expect(link).toHaveAttribute("href", "https://github.com/cabp1996");
   });
 });

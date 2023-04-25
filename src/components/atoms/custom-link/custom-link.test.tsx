@@ -19,7 +19,7 @@ describe("Custom Link", () => {
 
   test("should render a link with custom text", async () => {
     const anchor = await wrapper.findByText(props.text);
-    expect(anchor).toBeTruthy();
+    expect(anchor).toBeInTheDocument();
   });
 
   test("should render a link with default props", async () => {
