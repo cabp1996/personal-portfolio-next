@@ -13,8 +13,8 @@ describe("TechnicalInfo tests", () => {
   test("should render heading for skills and experiencie", async () => {
     const skillHeading = await screen.findByText("Skills");
     const experienceHeading = await screen.findByText("Experiencia");
-    expect(skillHeading).toBeTruthy();
-    expect(experienceHeading).toBeTruthy();
+    expect(skillHeading).toBeInTheDocument();
+    expect(experienceHeading).toBeInTheDocument();
   });
 
   test("should render all skills", () => {
