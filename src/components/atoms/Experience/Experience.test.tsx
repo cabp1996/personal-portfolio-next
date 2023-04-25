@@ -1,4 +1,4 @@
-import { Experience } from "../../../components/atoms/Experience/Experience";
+import { Experience } from "./experience";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("Experience tests", () => {

@@ -1,5 +1,5 @@
 import { RenderResult, render, screen } from "@testing-library/react";
-import { ProjectInfo } from "./ProjectInfo";
+import { ProjectInfo } from "./project-info";
 
 describe("Project Infor", () => {
   let wrapper: RenderResult;

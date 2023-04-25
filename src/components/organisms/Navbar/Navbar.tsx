@@ -1,4 +1,4 @@
-import { CustomLink } from "../../atoms/Link/CustomLink";
+import { CustomLink } from "../../atoms/custom-link/custom-link";
 import React from "react";
 import styles from "./Navbar.module.scss";
 

@@ -1,4 +1,4 @@
-import { Skill } from "./Skill";
+import { Skill } from "./skill";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("Skill tests", () => {

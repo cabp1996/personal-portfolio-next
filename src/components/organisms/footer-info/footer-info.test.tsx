@@ -1,5 +1,5 @@
 import { RenderResult, render, screen } from "@testing-library/react";
-import { FooterInfo } from "./FooterInfo";
+import { FooterInfo } from "./footer-info";
 
 describe("Footer Info", () => {
   let wrapper: RenderResult;

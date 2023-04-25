@@ -1,5 +1,5 @@
 import { RenderResult, render, screen } from "@testing-library/react";
-import { TechnicalInfo } from "./TechnicalInfo";
+import { TechnicalInfo } from "./technical-info";
 import { skillsData } from "../../../utils/consts/skill.data";
 import { experienceData } from "../../../utils/consts/experience.data";
 

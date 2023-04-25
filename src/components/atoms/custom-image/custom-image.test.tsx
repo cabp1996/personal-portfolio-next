@@ -1,4 +1,4 @@
-import { CustomImage } from "./CustomImage";
+import { CustomImage } from "./custom-image";
 import { render, RenderResult } from "@testing-library/react";
 
 describe("CustomImage tests", () => {

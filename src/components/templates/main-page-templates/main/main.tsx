@@ -1,7 +1,7 @@
 import React from "react";
-import { Profile } from "@/components/molecules/Profile/Profile";
-import { TechnicalInfo } from "@/components/organisms/TechnicalInfo/TechnicalInfo";
-import { Projects } from "@/components/organisms/Projects/Projects";
+import { Profile } from "@/components/molecules/profile/profile";
+import { TechnicalInfo } from "@/components/organisms/technical-info/technical-info";
+import { Projects } from "@/components/organisms/projects/projects";
 import styles from "./Main.module.scss";
 
 export const Main = () => {

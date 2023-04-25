@@ -1,5 +1,5 @@
 import { RenderResult, render, screen } from "@testing-library/react";
-import { Profile } from "./Profile";
+import { Profile } from "./profile";
 
 describe("Profile Tests", () => {
   let wrapper: RenderResult;
