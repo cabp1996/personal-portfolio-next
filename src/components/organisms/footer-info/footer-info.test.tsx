@@ -8,8 +8,13 @@ describe("Footer Info", () => {
     wrapper = render(<FooterInfo />);
   });
 
-  test("should render autho's name in heading", async () => {
-    const h3 = screen.findByRole("heading");
-    expect(h3).toBeTruthy();
+  test("should render author's name in heading", async () => {
+    const h3 = await screen.findByText("© Andrés Balcázar");
+    expect(h3).toBeInTheDocument();
+  });
+
+  test("should render current year", async () => {
+    const span = await screen.findByText("2023");
+    expect(span).toBeInTheDocument();
   });
 });
