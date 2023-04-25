@@ -14,8 +14,13 @@ describe("Skill tests", () => {
     wrapper = render(<Skill {...props} />);
   });
 
-  test("should render a skill", async () => {
+  test("should render a skill name", async () => {
     const skill = await wrapper.findByText(props.name);
-    expect(skill).toBeTruthy();
+    expect(skill).toBeInTheDocument();
+  });
+
+  test("should render a skill progress bar", async () => {
+    const progressbar = await wrapper.findByRole('progressbar');
+    expect(progressbar).toBeInTheDocument();
   });
 });
