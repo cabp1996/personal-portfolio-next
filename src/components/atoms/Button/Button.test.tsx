@@ -16,7 +16,7 @@ describe("Button", () => {
 
   test("should render a button with custom text", async () => {
     const button = await wrapper.findByText(props.text);
-    expect(button).toBeTruthy();
+    expect(button).toBeInTheDocument();
   });
 
   test("should button call onClick to trigger function", async () => {
