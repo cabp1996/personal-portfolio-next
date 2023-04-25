@@ -7,16 +7,27 @@ describe("Project Infor", () => {
 
   beforeEach(() => {
     props = {
-      name: "test",
-      description: "test",
-      duration: "test",
+      name: "testName",
+      description: "testDescription",
+      duration: "testDuration",
       skills: ["Skill1"],
     };
     wrapper = render(<ProjectInfo {...props} />);
   });
 
   test("should render de Project name in heading", async () => {
-    const h1 = screen.findByRole("heading");
-    expect(h1).toBeTruthy();
+    const h1 = await screen.findByText(props.name);
+    expect(h1).toBeInTheDocument();
+  });
+
+  test("should render project description", async () => {
+    const description = await screen.findByText(props.description);
+    expect(description).toBeInTheDocument();
+  });
+
+  test("should render de Project skills", async () => {
+    const list = await screen.findByRole("list");
+    const listElements = list.children;
+    expect(listElements.length).toEqual(props.skills.length);
   });
 });
