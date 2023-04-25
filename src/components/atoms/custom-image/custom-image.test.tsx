@@ -1,5 +1,5 @@
 import { CustomImage } from "./custom-image";
-import { render, RenderResult } from "@testing-library/react";
+import { render, RenderResult, screen } from "@testing-library/react";
 
 describe("CustomImage tests", () => {
   let wrapper: RenderResult;
@@ -17,7 +17,6 @@ describe("CustomImage tests", () => {
   });
 
   test("should render CustomImage", async () => {
-    const avatar = await wrapper.findByRole('img');
-    expect(avatar).toBeTruthy();
+    expect(screen.getByRole("img")).toHaveAttribute("src");
   });
 });
