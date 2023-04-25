@@ -1,7 +1,7 @@
 import { RenderResult, render, screen } from "@testing-library/react";
 import { TechnicalInfo } from "./technical-info";
-import { skillsData } from "../../../utils/consts/skill.data";
-import { experienceData } from "../../../utils/consts/experience.data";
+import { skillsData } from "../../../utils/constants/skill.data";
+import { experienceData } from "../../../utils/constants/experience.data";
 
 describe("TechnicalInfo tests", () => {
   let wrapper: RenderResult;
