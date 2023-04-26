@@ -3,7 +3,7 @@ import { Skill } from "../../atoms/skill/skill";
 import { experienceData } from "../../../utils/constants/experience.data";
 import { skillsData } from "../../../utils/constants/skill.data";
 import React from "react";
-import styles from "./TechnicalInfo.module.scss";
+import styles from "./technical-info.module.scss";
 
 export const TechnicalInfo = () => {
   return (

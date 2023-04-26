@@ -1,6 +1,6 @@
 import { CustomImage } from "../../atoms/custom-image/custom-image";
 import React from "react";
-import styles from "./Profile.module.scss";
+import styles from "./profile.module.scss";
 
 export const Profile = () => {
   return (

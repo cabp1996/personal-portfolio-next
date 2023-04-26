@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import styles from "./CustomLink.module.scss";
+import styles from "./custom-link.module.scss";
 
 interface Props {
   text: string;

@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectCard } from "../../molecules/project-card/project-card";
 import { projectsData } from "../../../utils/constants/projects.data";
-import styles from "./Projects.module.scss";
+import styles from "./projects.module.scss";
 
 export const Projects = () => {
   return (
