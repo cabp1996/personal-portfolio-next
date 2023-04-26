@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Experience.module.scss";
+import styles from "./experience.module.scss";
 
 interface Props {
   name: string;

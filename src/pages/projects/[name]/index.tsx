@@ -1,6 +1,6 @@
 import { ProjectMain } from "@/components";
-import { Project } from "@/interfaces";
-import { projectsData } from "@/utils/consts/projects.data";
+import { Project } from "../../../utils/interfaces/project.interface";
+import { projectsData } from "../../../utils/constants/projects.data";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React, { FC } from "react";

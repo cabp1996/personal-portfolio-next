@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Skill.module.scss";
+import styles from "./skill.module.scss";
 
 interface Props {
   name: string;

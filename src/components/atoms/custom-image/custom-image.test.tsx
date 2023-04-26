@@ -7,16 +7,20 @@ describe("CustomImage tests", () => {
 
   beforeEach(() => {
     props = {
-      src: "/src",
+      src: "/images/devsu.jpg",
       alt: "alt",
       width: 100,
       height: 100,
+      fill: false,
     };
 
     wrapper = render(<CustomImage {...props} />);
   });
 
   test("should render CustomImage", async () => {
-    expect(screen.getByRole("img")).toHaveAttribute("src");
+    const img: HTMLImageElement = screen.getByRole("img");
+    expect(img.src).toContain("_next/image?url=%2Fimages%2Fdevsu.jpg");
+    expect(img.width).toEqual(props.width);
+    expect(img.height).toEqual(props.height);
   });
 });
