@@ -1,7 +1,7 @@
 import { RenderResult, render, screen } from "@testing-library/react";
-import { TechnicalInfo } from "./TechnicalInfo";
-import { skillsData } from "../../../utils/consts/skill.data";
-import { experienceData } from "../../../utils/consts/experience.data";
+import { TechnicalInfo } from "./technical-info";
+import { skillsData } from "../../../utils/constants/skill.data";
+import { experienceData } from "../../../utils/constants/experience.data";
 
 describe("TechnicalInfo tests", () => {
   let wrapper: RenderResult;
@@ -13,8 +13,8 @@ describe("TechnicalInfo tests", () => {
   test("should render heading for skills and experiencie", async () => {
     const skillHeading = await screen.findByText("Skills");
     const experienceHeading = await screen.findByText("Experiencia");
-    expect(skillHeading).toBeTruthy();
-    expect(experienceHeading).toBeTruthy();
+    expect(skillHeading).toBeInTheDocument();
+    expect(experienceHeading).toBeInTheDocument();
   });
 
   test("should render all skills", () => {

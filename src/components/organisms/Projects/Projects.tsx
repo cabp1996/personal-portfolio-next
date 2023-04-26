@@ -1,6 +1,6 @@
 import React from "react";
-import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
-import { projectsData } from "../../../utils/consts/projects.data";
+import { ProjectCard } from "../../molecules/project-card/project-card";
+import { projectsData } from "../../../utils/constants/projects.data";
 import styles from "./Projects.module.scss";
 
 export const Projects = () => {

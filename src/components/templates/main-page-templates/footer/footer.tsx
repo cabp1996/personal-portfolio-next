@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterInfo } from "@/components/organisms/FooterInfo/FooterInfo";
+import { FooterInfo } from "@/components/organisms/footer-info/footer-info";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Project } from "@/interfaces";
+import { Project } from "../../../../utils/interfaces/project.interface";
 import styles from "./Main.module.scss";
 import { Button, CustomImage, ProjectInfo } from "@/components";
 import { useRouter } from "next/router";
